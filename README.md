@@ -4,7 +4,7 @@ A single-page, zero-dependency website that compares the API prices of 30 curren
 
 > **Unofficial.** This is a community reference, not affiliated with any provider. Prices, promotions and credit terms change often, so confirm on the provider's own page before paying.
 
-**Live site:** https://alialasif.github.io/AI-Model-Prices-and-Where-to-Buy-Credits/ (after you enable GitHub Pages, see [Deploy](#deploy-to-github-pages))
+**Live site:** https://alialasif.github.io/AI-Model-Prices-and-Where-to-Buy-Credits/ 
 
 ## What it shows
 
@@ -44,12 +44,6 @@ Limits to know about:
 4. If some models say "not found", edit that model's `or` list in `index.html` using the closest IDs shown, then run the workflow again.
 
 GitHub disables scheduled workflows in a public repository after 60 days without activity. The sync commits at least once a week, which counts as activity. If the schedule ever stops, re-enable it in the **Actions** tab.
-
-## Deploy to GitHub Pages
-
-1. Open **Settings → Pages**.
-2. Set **Source** to **Deploy from a branch**, choose `main` and `/ (root)`, and save.
-3. After a minute or two the site is live at `https://alialasif.github.io/AI-Model-Prices-and-Where-to-Buy-Credits/`.
 
 ## Run locally
 
