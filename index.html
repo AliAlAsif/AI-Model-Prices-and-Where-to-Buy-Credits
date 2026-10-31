@@ -111,8 +111,7 @@ footer{color:var(--mu);font:12.5px/1.6 ui-monospace,Consolas,Menlo,monospace;bor
 <footer>Unofficial and not affiliated with any provider. AUTO prices come from OpenRouter’s public model catalog and are synced daily by a GitHub Action; the catalog can lag a provider’s own page or differ during promotions. Manual rows, notes and credit terms are checked by hand. To fix or add a model, edit the JSON block near the bottom of <code>index.html</code>.</footer>
 </main>
 
-<script type="application/json" id="data">
-{"updated":"2026-10-31","synced":"2026-10-31",
+<script type="application/json" id="data">{"updated":"2026-10-31","synced":"2026-10-31",
 "providers":[
 {"k":"anthropic","n":"Anthropic (Claude)","buy":"https://platform.claude.com/","price":"https://platform.claude.com/docs/en/about-claude/pricing","note":"Prepaid credits. They expire one year after purchase, cannot be extended and are non-refundable."},
 {"k":"openai","n":"OpenAI","buy":"https://platform.openai.com/","price":"https://developers.openai.com/api/docs/pricing","note":"Prepaid. Minimum $5 (default $10). Credits expire after 1 year and are non-refundable. Auto-reload is on by default during setup."},
@@ -125,38 +124,37 @@ footer{color:var(--mu);font:12.5px/1.6 ui-monospace,Consolas,Menlo,monospace;bor
 {"k":"openrouter","n":"OpenRouter (aggregator)","buy":"https://openrouter.ai/","price":"https://openrouter.ai/models","note":"One balance for hundreds of models at the providers’ own token prices. Fee 5.5% (minimum $0.80) on cards, 5% on crypto. Accepts major cards, Alipay and USDC. Unused credits may expire after 365 days."}
 ],
 "models":[
-{"p":"anthropic","m":"Fable 5.1","id":"claude-fable-5-1","i":10,"o":50,"c":"1M","t":"Most capable. Research and multi-day tasks. Accepts text, images and PDFs.","or":["anthropic/claude-fable-5.1","anthropic/claude-fable-5"]},
-{"p":"anthropic","m":"Opus 5.5","id":"claude-opus-5-5","i":4,"o":20,"c":"1M","t":"Complex projects, agents and coding.","or":["anthropic/claude-opus-5.5"]},
-{"p":"anthropic","m":"Sonnet 5.5","id":"claude-sonnet-5-5","i":2,"o":10,"c":"1M","t":"Everyday tasks and writing. Cost-efficient.","or":["anthropic/claude-sonnet-5.5"]},
-{"p":"anthropic","m":"Haiku 5.5","id":"claude-haiku-5-5","i":0.1,"o":0.5,"c":"1M","t":"Fastest and lowest cost, for high volume. Rates are 5× higher for prompts over 100K tokens.","or":["anthropic/claude-haiku-5.5"]},
-{"p":"openai","m":"GPT-6 Astra","id":"gpt-6-astra","i":10,"o":50,"c":"—","t":"OpenAI flagship. One tracker lists higher rates above 272K tokens.","or":["openai/gpt-6-astra"]},
-{"p":"openai","m":"GPT-6.1 Sol","id":"gpt-6.1-sol","i":2,"o":10,"c":"—","t":"Balances intelligence and cost.","or":["openai/gpt-6.1-sol"]},
-{"p":"openai","m":"GPT-6.1 Terra","id":"gpt-6.1-terra","i":1,"o":5,"c":"—","t":"Smaller, cheaper tier than Sol.","or":["openai/gpt-6.1-terra"]},
-{"p":"openai","m":"GPT-6 Luna","id":"gpt-6-luna","i":0.1,"o":0.5,"c":"—","t":"High-volume, cost-sensitive steps.","or":["openai/gpt-6-luna"]},
-{"p":"openai","m":"GPT-5.3 Codex","id":"gpt-5.3-codex","i":1.75,"o":14,"c":"—","t":"Coding-focused model.","or":["openai/gpt-5.3-codex"]},
+{"p":"anthropic","m":"Fable 5.1","id":"claude-fable-5-1","i":10,"o":50,"c":"1M","t":"Most capable. Research and multi-day tasks. Accepts text, images and PDFs.","or":["anthropic/claude-fable-5.1","anthropic/claude-fable-5"],"oid":"anthropic/claude-fable-5.1"},
+{"p":"anthropic","m":"Opus 5.5","id":"claude-opus-5-5","i":4,"o":20,"c":"1M","t":"Complex projects, agents and coding.","or":["anthropic/claude-opus-5.5"],"oid":"anthropic/claude-opus-5.5"},
+{"p":"anthropic","m":"Sonnet 5.5","id":"claude-sonnet-5-5","i":2,"o":10,"c":"1M","t":"Everyday tasks and writing. Cost-efficient.","or":["anthropic/claude-sonnet-5.5"],"oid":"anthropic/claude-sonnet-5.5"},
+{"p":"anthropic","m":"Haiku 5.5","id":"claude-haiku-5-5","i":0.1,"o":0.5,"c":"1M","t":"Fastest and lowest cost, for high volume. Rates are 5× higher for prompts over 100K tokens.","or":["anthropic/claude-haiku-5.5"],"oid":"anthropic/claude-haiku-5.5"},
+{"p":"openai","m":"GPT-6 Astra","id":"gpt-6-astra","i":10,"o":50,"c":"1M","t":"OpenAI flagship. One tracker lists higher rates above 272K tokens.","or":["openai/gpt-6-astra"],"oid":"openai/gpt-6-astra"},
+{"p":"openai","m":"GPT-6.1 Sol","id":"gpt-6.1-sol","i":2,"o":10,"c":"1M","t":"Balances intelligence and cost.","or":["openai/gpt-6.1-sol"],"oid":"openai/gpt-6.1-sol"},
+{"p":"openai","m":"GPT-6.1 Terra","id":"gpt-6.1-terra","i":1,"o":5,"c":"1M","t":"Smaller, cheaper tier than Sol.","or":["openai/gpt-6.1-terra"],"oid":"openai/gpt-6.1-terra"},
+{"p":"openai","m":"GPT-6 Luna","id":"gpt-6-luna","i":0.1,"o":0.5,"c":"1M","t":"High-volume, cost-sensitive steps.","or":["openai/gpt-6-luna"],"oid":"openai/gpt-6-luna"},
+{"p":"openai","m":"GPT-5.3 Codex","id":"gpt-5.3-codex","i":1.75,"o":14,"c":"400K","t":"Coding-focused model.","or":["openai/gpt-5.3-codex"],"oid":"openai/gpt-5.3-codex"},
 {"p":"openai","m":"GPT Realtime 2.1","id":"gpt-realtime-2.1","i":4,"o":24,"c":"—","t":"Live voice and audio. Text rates shown. Audio costs $32 in / $64 out."},
-{"p":"google","m":"Gemini 4 Argon","id":"gemini-4-argon","i":2,"o":10,"c":"1M","t":"Google flagship, paid only. Price rises to $4 / $20 on Dec 1, 2026.","or":["google/gemini-4-argon"]},
-{"p":"google","m":"Gemini 3.1 Pro (Preview)","id":"gemini-3.1-pro-preview","i":2,"o":12,"c":"1M","t":"Deep reasoning. $4 / $18 for prompts over 200K tokens.","or":["google/gemini-3.1-pro-preview","google/gemini-3.1-pro"]},
-{"p":"google","m":"Gemini 3.8 Flash","id":"gemini-3.8-flash","i":0.75,"o":3.75,"c":"1M","t":"Newest Flash, the default workhorse. Rises to $1.50 / $7.50 on Jan 1, 2027.","or":["google/gemini-3.8-flash"]},
-{"p":"google","m":"Gemini 3.5 Flash-Lite","id":"gemini-3.5-flash-lite","i":0.3,"o":2.5,"c":"1M","t":"Budget tier Google recommends for new projects. Thinking and tools supported.","or":["google/gemini-3.5-flash-lite"]},
-{"p":"google","m":"Gemini 3.1 Flash-Lite","id":"gemini-3.1-flash-lite","i":0.25,"o":1.5,"c":"—","t":"Cheapest for new projects. Earliest shutdown May 7, 2027.","or":["google/gemini-3.1-flash-lite","google/gemini-3.1-flash-lite-preview"]},
+{"p":"google","m":"Gemini 4 Argon","id":"gemini-4-argon","i":2,"o":10,"c":"1M","t":"Google flagship, paid only. Price rises to $4 / $20 on Dec 1, 2026.","or":["google/gemini-4-argon"],"oid":"google/gemini-4-argon"},
+{"p":"google","m":"Gemini 3.1 Pro (Preview)","id":"gemini-3.1-pro-preview","i":2,"o":12,"c":"1M","t":"Deep reasoning. $4 / $18 for prompts over 200K tokens.","or":["google/gemini-3.1-pro-preview","google/gemini-3.1-pro"],"oid":"google/gemini-3.1-pro-preview"},
+{"p":"google","m":"Gemini 3.8 Flash","id":"gemini-3.8-flash","i":0.825,"o":4.125,"c":"1M","t":"Newest Flash, the default workhorse. Rises to $1.50 / $7.50 on Jan 1, 2027.","or":["google/gemini-3.8-flash"],"oid":"google/gemini-3.8-flash"},
+{"p":"google","m":"Gemini 3.5 Flash-Lite","id":"gemini-3.5-flash-lite","i":0.3,"o":2.5,"c":"1M","t":"Budget tier Google recommends for new projects. Thinking and tools supported.","or":["google/gemini-3.5-flash-lite"],"oid":"google/gemini-3.5-flash-lite"},
+{"p":"google","m":"Gemini 3.1 Flash-Lite","id":"gemini-3.1-flash-lite","i":0.25,"o":1.5,"c":"1M","t":"Cheapest for new projects. Earliest shutdown May 7, 2027.","or":["google/gemini-3.1-flash-lite","google/gemini-3.1-flash-lite-preview"],"oid":"google/gemini-3.1-flash-lite"},
 {"p":"google","m":"Gemini 3.1 Flash Image (Nano Banana)","id":"gemini-3.1-flash-image","i":0.5,"o":null,"c":"—","t":"Image generation. About $0.067 per 1K image instead of output tokens."},
-{"p":"xai","m":"Grok 4.7","id":"grok-4.7","i":2,"o":6,"c":"500K","t":"xAI flagship for coding and knowledge work. Rates double for prompts of 200K tokens or more.","or":["x-ai/grok-4.7"]},
-{"p":"xai","m":"Grok 4.3","id":"grok-4.3","i":1.25,"o":2.5,"c":"1M","t":"Budget frontier option with a long context.","or":["x-ai/grok-4.3"]},
-{"p":"xai","m":"Grok Build 0.1","id":"grok-build-0.1","i":1,"o":2,"c":"256K","t":"Coding-focused and the cheapest Grok.","or":["x-ai/grok-build-0.1"]},
+{"p":"xai","m":"Grok 4.7","id":"grok-4.7","i":2,"o":6,"c":"500K","t":"xAI flagship for coding and knowledge work. Rates double for prompts of 200K tokens or more.","or":["x-ai/grok-4.7"],"oid":"x-ai/grok-4.7"},
+{"p":"xai","m":"Grok 4.3","id":"grok-4.3","i":1.25,"o":2.5,"c":"1M","t":"Budget frontier option with a long context.","or":["x-ai/grok-4.3"],"oid":"x-ai/grok-4.3"},
+{"p":"xai","m":"Grok Build 0.1","id":"grok-build-0.1","i":1,"o":2,"c":"256K","t":"Coding-focused and the cheapest Grok.","or":["x-ai/grok-build-0.1"],"oid":"x-ai/grok-build-0.1"},
 {"p":"deepseek","m":"DeepSeek V4.1 Flash","id":"deepseek-flash","i":0.3,"o":1.2,"c":"1M","t":"Peak-hour rates shown. Half price off-peak ($0.15 / $0.60). Up to 384K output. Cached input is far cheaper."},
 {"p":"deepseek","m":"DeepSeek V4 Pro","id":"deepseek-v4-pro","i":1.32,"o":3.96,"c":"1M","t":"Higher-quality tier. Peak-hour rates shown. Half price off-peak ($0.66 / $1.98)."},
 {"p":"mistral","m":"Mistral Large 4","id":"mistral-large-4","i":1.36,"o":4.18,"c":"—","t":"Multimodal reasoning. The launch sale ended on Oct 20, 2026.","or":["mistralai/mistral-large-4"]},
-{"p":"mistral","m":"Mistral Medium 3.5","id":"mistral-medium-3.5","i":1.5,"o":7.5,"c":"—","t":"Mid-tier model that Mistral features.","or":["mistralai/mistral-medium-3.5"]},
-{"p":"mistral","m":"Mistral Large 3","id":"mistral-large-3","i":0.5,"o":1.5,"c":"262K","t":"Open-weight flagship. Good value.","or":["mistralai/mistral-large-3","mistralai/mistral-large-2512"]},
+{"p":"mistral","m":"Mistral Medium 3.5","id":"mistral-medium-3.5","i":1.5,"o":7.5,"c":"262K","t":"Mid-tier model that Mistral features.","or":["mistralai/mistral-medium-3.5"],"oid":"mistralai/mistral-medium-3-5"},
+{"p":"mistral","m":"Mistral Large 3","id":"mistral-large-3","i":0.5,"o":1.5,"c":"262K","t":"Open-weight flagship. Good value.","or":["mistralai/mistral-large-3","mistralai/mistral-large-2512"],"oid":"mistralai/mistral-large-2512"},
 {"p":"mistral","m":"Mistral Small 4","id":"mistral-small-4","i":0.15,"o":0.6,"c":"—","t":"Small, low-cost model.","or":["mistralai/mistral-small-4"]},
-{"p":"mistral","m":"Ministral 3 8B","id":"ministral-3-8b","i":0.1,"o":0.1,"c":"—","t":"Edge-sized model for text and vision.","or":["mistralai/ministral-3-8b","mistralai/ministral-8b-2512"]},
-{"p":"alibaba","m":"Qwen3.8-Max","id":"qwen3.8-max","i":2,"o":6,"c":"1M","t":"Alibaba flagship. One flat price across the whole context.","or":["qwen/qwen3.8-max"]},
-{"p":"alibaba","m":"Qwen3.7-Plus","id":"qwen3.7-plus","i":0.4,"o":1.6,"c":"1M","t":"Multimodal agent and vision model. Price shown is for inputs under 256K tokens.","or":["qwen/qwen3.7-plus"]},
-{"p":"moonshot","m":"Kimi K3.1 Pro","id":"kimi-k3.1-pro","i":2,"o":10,"c":"1M","t":"Released Oct 23, 2026. Open weights planned for Nov 4.","or":["moonshotai/kimi-k3.1-pro"]},
-{"p":"moonshot","m":"Kimi K2.6","id":"kimi-k2.6","i":0.95,"o":4,"c":"262K","t":"Open weights. Accepts text, image and video input.","or":["moonshotai/kimi-k2.6"]}
-]}
-</script>
+{"p":"mistral","m":"Ministral 3 8B","id":"ministral-3-8b","i":0.15,"o":0.15,"c":"262K","t":"Edge-sized model for text and vision.","or":["mistralai/ministral-3-8b","mistralai/ministral-8b-2512"],"oid":"mistralai/ministral-8b-2512"},
+{"p":"alibaba","m":"Qwen3.8-Max","id":"qwen3.8-max","i":2,"o":6,"c":"1M","t":"Alibaba flagship. One flat price across the whole context.","or":["qwen/qwen3.8-max"],"oid":"qwen/qwen3.8-max-0902"},
+{"p":"alibaba","m":"Qwen3.7-Plus","id":"qwen3.7-plus","i":0.32,"o":1.28,"c":"1M","t":"Multimodal agent and vision model. Price shown is for inputs under 256K tokens.","or":["qwen/qwen3.7-plus"],"oid":"qwen/qwen3.7-plus"},
+{"p":"moonshot","m":"Kimi K3.1 Pro","id":"kimi-k3.1-pro","i":2,"o":10,"c":"1M","t":"Released Oct 23, 2026. Open weights planned for Nov 4.","or":["moonshotai/kimi-k3.1-pro"],"oid":"moonshotai/kimi-k3.1-pro"},
+{"p":"moonshot","m":"Kimi K2.6","id":"kimi-k2.6","i":0.65,"o":3.41,"c":"262K","t":"Open weights. Accepts text, image and video input.","or":["moonshotai/kimi-k2.6"],"oid":"moonshotai/kimi-k2.6"}
+]}</script>
 <script>
 const $=id=>document.getElementById(id),D=JSON.parse($('data').textContent);
 const PN=Object.fromEntries(D.providers.map(p=>[p.k,p.n])),PC={anthropic:'#ff8a5b',openai:'#2ee6a6',google:'#5b9bff',xai:'#e6edf7',deepseek:'#6f86ff',mistral:'#ff6b2b',alibaba:'#ffc02e',moonshot:'#a58bff',openrouter:'#8b8dff'};
