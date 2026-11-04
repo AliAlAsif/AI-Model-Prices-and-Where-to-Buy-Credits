@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Model Prices and Where to Buy Credits</title>
+<style>
+:root{--bg:#f6f8fc;--sf:#fff;--cb:#eef3fb;--tx:#14213d;--mu:#55627a;--ac:#1d4fbf;--hd:#0b2a5b;--yel:#f2b705;--yt:#8a6500;--bd:#d6dde9;--sh:0 1px 2px rgba(11,42,91,.06),0 4px 14px rgba(11,42,91,.06);--btn:#0b2a5b;--btx:#fff;--thb:#0b2a5b;--tht:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1224;--sf:#111c36;--cb:#16233f;--tx:#e8eefc;--mu:#9db0d3;--ac:#7db0ff;--hd:#dbe7ff;--yel:#ffd23f;--yt:#ffd23f;--bd:#26365a;--sh:none;--btn:#ffd23f;--btx:#0a1224;--thb:#16233f;--tht:#dbe7ff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1224;--sf:#111c36;--cb:#16233f;--tx:#e8eefc;--mu:#9db0d3;--ac:#7db0ff;--hd:#dbe7ff;--yel:#ffd23f;--yt:#ffd23f;--bd:#26365a;--sh:none;--btn:#ffd23f;--btx:#0a1224;--thb:#16233f;--tht:#dbe7ff;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit;font-family:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:18px/1.6 "Times New Roman",Times,"Liberation Serif",serif;min-height:100vh}
+body::after{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--sf);z-index:12}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--sf);border-bottom:3px solid var(--yel)}
+nav{max-width:1200px;margin:0 auto;padding:12px 18px;display:flex;gap:22px;align-items:center;overflow-x:auto;white-space:nowrap;font-size:16px}
+nav b{color:var(--hd);font-size:20px;letter-spacing:.01em}
+nav a{color:var(--mu);text-decoration:none}nav a:hover{color:var(--ac);text-decoration:underline}
+nav button{margin-left:auto}
+main{max-width:1200px;margin:0 auto;padding:0 18px 60px}
+h1{font-size:clamp(36px,6vw,54px);line-height:1.1;margin:46px 0 4px;color:var(--hd);font-weight:700;letter-spacing:-.01em}
+.rule{width:72px;height:4px;background:var(--yel);margin:12px 0 16px}
+.lead{font-size:20px;color:var(--mu);margin:0 0 12px;max-width:760px}
+.live{font-size:15px;color:var(--mu);margin:0}
+.live::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--yel);margin-right:9px}
+h2{font-size:28px;line-height:1.2;margin:52px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--bd);color:var(--hd)}
+.sub{color:var(--mu);margin:0 0 14px;font-size:16.5px}
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin:24px 0}
+.stat{background:var(--sf);border:1px solid var(--bd);border-top:3px solid var(--yel);border-radius:8px;padding:14px 18px;box-shadow:var(--sh)}
+.stat b{display:block;font-size:30px;line-height:1.2;color:var(--hd)}
+.stat span{font-size:13px;color:var(--mu);text-transform:uppercase;letter-spacing:.07em}
+.note{border:1px solid var(--bd);border-left:4px solid var(--yel);background:var(--sf);padding:12px 18px;border-radius:8px;margin:16px 0;font-size:16.5px;box-shadow:var(--sh)}
+code{font-size:.92em;background:var(--cb);padding:1px 6px;border-radius:4px;color:var(--ac)}
+button{font-size:15px;background:var(--sf);color:var(--hd);border:1px solid var(--bd);border-radius:6px;padding:6px 16px;cursor:pointer}
+button:hover{border-color:var(--ac);color:var(--ac)}
+.tools{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin:16px 0}
+label{display:block;font-size:13px;color:var(--mu);margin-bottom:4px;text-transform:uppercase;letter-spacing:.07em}
+input,select{width:100%;font-size:16.5px;padding:9px 11px;border:1px solid var(--bd);border-radius:6px;background:var(--sf);color:var(--tx)}
+input:focus,select:focus{outline:2px solid var(--ac);outline-offset:1px}
+.tw{overflow:auto;max-height:min(74vh,860px);margin:12px 0;border:1px solid var(--bd);border-radius:8px;background:var(--sf);box-shadow:var(--sh)}
+table{border-collapse:collapse;width:100%;min-width:1040px;font-size:16px}
+th,td{border-bottom:1px solid var(--bd);padding:10px 13px;text-align:left;vertical-align:top}
+th{background:var(--thb);color:var(--tht);font-size:13px;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;font-weight:700;position:sticky;top:0;z-index:2;box-shadow:0 1px 0 var(--bd)}
+tbody tr:nth-child(even){background:var(--cb)}
+tbody tr:hover{background:rgba(242,183,5,.13)}
+td:nth-child(1){min-width:132px}td:nth-child(2){min-width:225px}td:nth-child(6){min-width:250px}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.n{font-weight:700}
+.t1{color:var(--ac)}.t2{color:var(--tx)}.t3{color:var(--yt)}
+td small{display:block;color:var(--mu);font-size:13.5px;font-style:italic;margin-top:1px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;background:currentColor}
+.tag{font-size:11px;font-weight:700;letter-spacing:.05em;background:var(--cb);color:var(--mu);border-radius:12px;padding:2px 9px;margin-left:8px;vertical-align:1px;display:inline-block}
+.tag.a{background:var(--yel);color:#14213d}.tag.p{background:var(--ac);color:var(--btx)}
+.bar{height:5px;border-radius:3px;background:var(--bd);margin-top:6px;min-width:110px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ac)}
+.bar i.y{background:var(--yel)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:18px 20px;box-shadow:var(--sh)}
+.card h3{margin:0 0 6px;font-size:21px;color:var(--hd)}
+.card p{margin:6px 0 4px;font-size:16px;color:var(--mu)}
+.btn{display:inline-block;background:var(--btn);color:var(--btx);text-decoration:none;border-radius:6px;padding:8px 16px;font-size:15.5px;font-weight:700;margin:8px 10px 0 0}
+.btn:hover{filter:brightness(1.12)}
+.btn.o{background:none;color:var(--ac);border:1px solid var(--ac)}
+.box{background:var(--sf);border:1px solid var(--bd);border-left:4px solid var(--yel);border-radius:8px;box-shadow:var(--sh)}
+.box ul{margin:0;padding:12px 22px 12px 42px;font-size:17px}
+.box li{margin:9px 0}.box li::marker{color:var(--ac)}
+.chart-wrap{background:var(--sf);border:1px solid var(--bd);border-top:3px solid var(--yel);border-radius:8px;padding:16px 18px;box-shadow:var(--sh);margin:22px 0;flex-direction:column;gap:9px}
+.chart-wrap h3{margin:0 0 4px;font-size:19px;color:var(--hd)}
+.c-row{display:flex;align-items:center;font-size:15.5px}
+.c-lbl{width:150px;flex:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:12px;color:var(--hd);font-weight:700}
+.c-track{flex:1;height:18px;background:var(--cb);border-radius:3px;overflow:hidden}
+.c-bar{height:100%;background:var(--ac);min-width:3px}
+.c-val{margin-left:12px;width:84px;flex:none;text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+footer{color:var(--mu);font-size:14.5px;border-top:1px solid var(--bd);padding-top:18px;margin-top:44px}
+</style>
+</head>
+<body>
+<header><nav><b>AI Model Prices</b><a href="#table">Models</a><a href="#buy">Buy credits</a><a href="#tips">Before you buy</a><a href="https://alialasif.github.io/Claude-API-Starter-Guide/">Claude API guide</a><button id="theme">Theme</button></nav></header>
+<main>
+<h1>AI Model Prices</h1>
+<div class="rule"></div>
+<p class="lead">Compare the API prices and capabilities of leading AI models, and find where to buy credits.</p>
+<p class="live" id="live"></p>
+<div class="stats" id="stats"></div>
+<div class="chart-wrap" id="chart-wrap" style="display:none"><h3>Five cheapest models for this request</h3><div id="chart" style="display:flex;flex-direction:column;gap:9px"></div></div>
+<div class="note"><b>Not literally every model.</b> This covers major text and multimodal API models. Others (Meta Llama, Cohere, Amazon Nova, Zhipu, MiniMax) and most image, video and audio models are not included. Rows tagged <b>AUTO</b> are re-priced every day from OpenRouter’s public catalog, which passes through provider list prices. <b>PENDING</b> rows are set up for that sync and wait for its next run. <b>MANUAL</b> rows are edited by hand. Always confirm on the provider’s page before paying.</div>
+
+<h2 id="table">Compare models</h2>
+<div class="tools">
+<div><label for="q">Search</label><input id="q" placeholder="model, provider or capability"></div>
+<div><label for="pv">Provider</label><select id="pv"></select></div>
+<div><label for="so">Sort by</label><select id="so"><option value="rq">Cost per request</option><option value="i">Input price</option><option value="o">Output price</option><option value="p">Provider</option></select></div>
+<div><label for="ti">Input tokens</label><input id="ti" type="number" min="0" value="2000"></div>
+<div><label for="to">Output tokens</label><input id="to" type="number" min="0" value="500"></div>
+</div>
+<div class="tw"><table><thead><tr><th>Provider</th><th>Model</th><th class="n">Input / 1M</th><th class="n">Output / 1M</th><th>Context</th><th>Capabilities and notes</th><th class="n">Cost / request</th></tr></thead><tbody id="tb"></tbody></table></div>
+<p class="sub" id="cnt"></p>
+
+<h2 id="buy">Where to buy credits</h2>
+<p class="sub">Each button opens the provider’s site. Menu names change, so look for Billing, Credits or Top up after you sign in.</p>
+<div class="grid" id="prov"></div>
+
+<h2 id="tips">Before you buy</h2>
+<div class="box"><ul>
+<li>Most providers sell <b>prepaid credits that expire after about a year</b> and are non-refundable. Buy only what you will use, and start with the minimum.</li>
+<li>Turn <b>auto-reload off</b> unless you want automatic purchases. OpenAI turns it on by default during setup.</li>
+<li>Supported countries, accepted cards, local payment methods and taxes (VAT or GST) differ by provider, so your final cost can be noticeably above the credit amount.</li>
+<li>Watch for <b>changing prices</b>: promotions end, and DeepSeek charges double at peak hours. AUTO rows pick up list-price changes by themselves, but the notes beside them are written by hand.</li>
+<li>An <b>aggregator</b> such as OpenRouter lets one balance reach many models, at the cost of a purchase fee.</li>
+<li>Output tokens usually cost 3 to 6 times input tokens, so a model with cheap input can still be expensive for long answers. Use the cost column with your own token counts.</li>
+</ul></div>
+<footer>Unofficial and not affiliated with any provider. AUTO prices come from OpenRouter’s public model catalog and are synced daily by a GitHub Action; the catalog can lag a provider’s own page or differ during promotions. Manual rows, notes and credit terms are checked by hand. To fix or add a model, edit the JSON block near the bottom of <code>index.html</code>.</footer>
+</main>
+
+<script type="application/json" id="data">
+{"updated":"2026-10-31","synced":"2026-10-31",
+"providers":[
+{"k":"anthropic","n":"Anthropic (Claude)","buy":"https://platform.claude.com/","price":"https://platform.claude.com/docs/en/about-claude/pricing","note":"Prepaid credits. They expire one year after purchase, cannot be extended and are non-refundable."},
+{"k":"openai","n":"OpenAI","buy":"https://platform.openai.com/","price":"https://developers.openai.com/api/docs/pricing","note":"Prepaid. Minimum $5 (default $10). Credits expire after 1 year and are non-refundable. Auto-reload is on by default during setup."},
+{"k":"google","n":"Google (Gemini)","buy":"https://aistudio.google.com/","price":"https://ai.google.dev/gemini-api/docs/pricing","note":"New accounts default to prepay. On the AI Studio Billing page choose Buy credits: minimum $10, maximum $5,000, expire after 12 months, non-refundable."},
+{"k":"xai","n":"xAI (Grok)","buy":"https://console.x.ai/","price":"https://docs.x.ai/developers/pricing","note":"Buy credits in the xAI console. Minimums and expiry were not verified, so check the billing page."},
+{"k":"deepseek","n":"DeepSeek","buy":"https://platform.deepseek.com/","price":"https://api-docs.deepseek.com/quick_start/pricing","note":"Top up on the DeepSeek platform. Peak and off-peak prices apply. Expiry terms were not verified."},
+{"k":"mistral","n":"Mistral","buy":"https://console.mistral.ai/","price":"https://mistral.ai/pricing/api","note":"One tracker reports the API has been for business customers only since August 2026. Check eligibility before paying."},
+{"k":"alibaba","n":"Alibaba (Qwen)","buy":"https://www.alibabacloud.com/help/en/model-studio/pricing","price":"https://www.alibabacloud.com/help/en/model-studio/pricing","note":"Alibaba Cloud Model Studio, International (Singapore) prices. New accounts get a 1M-token free quota per eligible model for 90 days. Payment terms were not verified."},
+{"k":"moonshot","n":"Moonshot (Kimi)","buy":"https://platform.kimi.ai/","price":"https://platform.kimi.ai/","note":"Kimi API platform. Terms were not verified, so check the billing page."},
+{"k":"openrouter","n":"OpenRouter (aggregator)","buy":"https://openrouter.ai/","price":"https://openrouter.ai/models","note":"One balance for hundreds of models at the providers’ own token prices. Fee 5.5% (minimum $0.80) on cards, 5% on crypto. Accepts major cards, Alipay and USDC. Unused credits may expire after 365 days."}
+],
+"models":[
+{"p":"anthropic","m":"Fable 5.1","id":"claude-fable-5-1","i":10,"o":50,"c":"1M","t":"Most capable. Research and multi-day tasks. Accepts text, images and PDFs.","or":["anthropic/claude-fable-5.1","anthropic/claude-fable-5"]},
+{"p":"anthropic","m":"Opus 5.5","id":"claude-opus-5-5","i":4,"o":20,"c":"1M","t":"Complex projects, agents and coding.","or":["anthropic/claude-opus-5.5"]},
+{"p":"anthropic","m":"Sonnet 5.5","id":"claude-sonnet-5-5","i":2,"o":10,"c":"1M","t":"Everyday tasks and writing. Cost-efficient.","or":["anthropic/claude-sonnet-5.5"]},
+{"p":"anthropic","m":"Haiku 5.5","id":"claude-haiku-5-5","i":0.1,"o":0.5,"c":"1M","t":"Fastest and lowest cost, for high volume. Rates are 5× higher for prompts over 100K tokens.","or":["anthropic/claude-haiku-5.5"]},
+{"p":"openai","m":"GPT-6 Astra","id":"gpt-6-astra","i":10,"o":50,"c":"—","t":"OpenAI flagship. One tracker lists higher rates above 272K tokens.","or":["openai/gpt-6-astra"]},
+{"p":"openai","m":"GPT-6.1 Sol","id":"gpt-6.1-sol","i":2,"o":10,"c":"—","t":"Balances intelligence and cost.","or":["openai/gpt-6.1-sol"]},
+{"p":"openai","m":"GPT-6.1 Terra","id":"gpt-6.1-terra","i":1,"o":5,"c":"—","t":"Smaller, cheaper tier than Sol.","or":["openai/gpt-6.1-terra"]},
+{"p":"openai","m":"GPT-6 Luna","id":"gpt-6-luna","i":0.1,"o":0.5,"c":"—","t":"High-volume, cost-sensitive steps.","or":["openai/gpt-6-luna"]},
+{"p":"openai","m":"GPT-5.3 Codex","id":"gpt-5.3-codex","i":1.75,"o":14,"c":"—","t":"Coding-focused model.","or":["openai/gpt-5.3-codex"]},
+{"p":"openai","m":"GPT Realtime 2.1","id":"gpt-realtime-2.1","i":4,"o":24,"c":"—","t":"Live voice and audio. Text rates shown. Audio costs $32 in / $64 out."},
+{"p":"google","m":"Gemini 4 Argon","id":"gemini-4-argon","i":2,"o":10,"c":"1M","t":"Google flagship, paid only. Price rises to $4 / $20 on Dec 1, 2026.","or":["google/gemini-4-argon"]},
+{"p":"google","m":"Gemini 3.1 Pro (Preview)","id":"gemini-3.1-pro-preview","i":2,"o":12,"c":"1M","t":"Deep reasoning. $4 / $18 for prompts over 200K tokens.","or":["google/gemini-3.1-pro-preview","google/gemini-3.1-pro"]},
+{"p":"google","m":"Gemini 3.8 Flash","id":"gemini-3.8-flash","i":0.75,"o":3.75,"c":"1M","t":"Newest Flash, the default workhorse. Rises to $1.50 / $7.50 on Jan 1, 2027.","or":["google/gemini-3.8-flash"]},
+{"p":"google","m":"Gemini 3.5 Flash-Lite","id":"gemini-3.5-flash-lite","i":0.3,"o":2.5,"c":"1M","t":"Budget tier Google recommends for new projects. Thinking and tools supported.","or":["google/gemini-3.5-flash-lite"]},
+{"p":"google","m":"Gemini 3.1 Flash-Lite","id":"gemini-3.1-flash-lite","i":0.25,"o":1.5,"c":"—","t":"Cheapest for new projects. Earliest shutdown May 7, 2027.","or":["google/gemini-3.1-flash-lite","google/gemini-3.1-flash-lite-preview"]},
+{"p":"google","m":"Gemini 3.1 Flash Image (Nano Banana)","id":"gemini-3.1-flash-image","i":0.5,"o":null,"c":"—","t":"Image generation. About $0.067 per 1K image instead of output tokens."},
+{"p":"xai","m":"Grok 4.7","id":"grok-4.7","i":2,"o":6,"c":"500K","t":"xAI flagship for coding and knowledge work. Rates double for prompts of 200K tokens or more.","or":["x-ai/grok-4.7"]},
+{"p":"xai","m":"Grok 4.3","id":"grok-4.3","i":1.25,"o":2.5,"c":"1M","t":"Budget frontier option with a long context.","or":["x-ai/grok-4.3"]},
+{"p":"xai","m":"Grok Build 0.1","id":"grok-build-0.1","i":1,"o":2,"c":"256K","t":"Coding-focused and the cheapest Grok.","or":["x-ai/grok-build-0.1"]},
+{"p":"deepseek","m":"DeepSeek V4.1 Flash","id":"deepseek-flash","i":0.3,"o":1.2,"c":"1M","t":"Peak-hour rates shown. Half price off-peak ($0.15 / $0.60). Up to 384K output. Cached input is far cheaper."},
+{"p":"deepseek","m":"DeepSeek V4 Pro","id":"deepseek-v4-pro","i":1.32,"o":3.96,"c":"1M","t":"Higher-quality tier. Peak-hour rates shown. Half price off-peak ($0.66 / $1.98)."},
+{"p":"mistral","m":"Mistral Large 4","id":"mistral-large-4","i":1.36,"o":4.18,"c":"—","t":"Multimodal reasoning. The launch sale ended on Oct 20, 2026.","or":["mistralai/mistral-large-4"]},
+{"p":"mistral","m":"Mistral Medium 3.5","id":"mistral-medium-3.5","i":1.5,"o":7.5,"c":"—","t":"Mid-tier model that Mistral features.","or":["mistralai/mistral-medium-3.5"]},
+{"p":"mistral","m":"Mistral Large 3","id":"mistral-large-3","i":0.5,"o":1.5,"c":"262K","t":"Open-weight flagship. Good value.","or":["mistralai/mistral-large-3","mistralai/mistral-large-2512"]},
+{"p":"mistral","m":"Mistral Small 4","id":"mistral-small-4","i":0.15,"o":0.6,"c":"—","t":"Small, low-cost model.","or":["mistralai/mistral-small-4"]},
+{"p":"mistral","m":"Ministral 3 8B","id":"ministral-3-8b","i":0.1,"o":0.1,"c":"—","t":"Edge-sized model for text and vision.","or":["mistralai/ministral-3-8b","mistralai/ministral-8b-2512"]},
+{"p":"alibaba","m":"Qwen3.8-Max","id":"qwen3.8-max","i":2,"o":6,"c":"1M","t":"Alibaba flagship. One flat price across the whole context.","or":["qwen/qwen3.8-max"]},
+{"p":"alibaba","m":"Qwen3.7-Plus","id":"qwen3.7-plus","i":0.4,"o":1.6,"c":"1M","t":"Multimodal agent and vision model. Price shown is for inputs under 256K tokens.","or":["qwen/qwen3.7-plus"]},
+{"p":"moonshot","m":"Kimi K3.1 Pro","id":"kimi-k3.1-pro","i":2,"o":10,"c":"1M","t":"Released Oct 23, 2026. Open weights planned for Nov 4.","or":["moonshotai/kimi-k3.1-pro"]},
+{"p":"moonshot","m":"Kimi K2.6","id":"kimi-k2.6","i":0.95,"o":4,"c":"262K","t":"Open weights. Accepts text, image and video input.","or":["moonshotai/kimi-k2.6"]}
+]}
+</script>
+<script>
+const $=id=>document.getElementById(id),D=JSON.parse($('data').textContent);
+const PN=Object.fromEntries(D.providers.map(p=>[p.k,p.n])),PC={anthropic:'#f2b705',openai:'#3b6fe0',google:'#5b9bf5',xai:'#7d8fb3',deepseek:'#2f5bff',mistral:'#d9a000',alibaba:'#e8c53a',moonshot:'#7ba7ea',openrouter:'#6f8fcf'};
+const f2=v=>Math.abs(v*100-Math.round(v*100))<1e-9?v.toFixed(2):v.toFixed(3);
+const money=v=>v==null?'see note':'$'+f2(v);
+const rqf=v=>v==null?'—':'$'+(v<.01?v.toFixed(5):v.toFixed(4));
+const num=id=>Math.max(0,parseFloat($(id).value)||0);
+const mm=(a)=>[Math.min(...a),Math.max(...a)];
+const tier=(v,[lo,hi])=>{if(v==null||!(hi>lo))return 2;const x=(Math.log(v)-Math.log(lo))/(Math.log(hi)-Math.log(lo));return x<.34?1:x<.67?2:3};
+const tag=m=>m.oid?'<span class="tag a" title="Synced daily from OpenRouter: '+m.oid+'">AUTO</span>':m.or?'<span class="tag p" title="Set to sync daily. If it stays PENDING after a run, its OpenRouter ID was not found.">PENDING</span>':'<span class="tag" title="Updated by hand">MANUAL</span>';
+const RI=mm(D.models.map(m=>m.i).filter(v=>v>0)),RO=mm(D.models.map(m=>m.o).filter(v=>v>0));
+$('live').textContent='Prices are checked automatically every day. Last checked '+D.synced+' (UTC); last price change '+D.updated+'.';
+$('pv').innerHTML='<option value="">All providers</option>'+D.providers.filter(p=>p.k!=='openrouter').map(p=>`<option value="${p.k}">${p.n}</option>`).join('');
+function render(){
+  const q=$('q').value.toLowerCase(),pv=$('pv').value,ti=num('ti'),to=num('to'),so=$('so').value;
+  const all=D.models.map(m=>({...m,rq:m.o==null?null:(ti*m.i+to*m.o)/1e6})),rr=all.filter(m=>m.rq>0).map(m=>m.rq),RQ=mm(rr);
+  const r=all.filter(m=>(!pv||m.p===pv)&&(PN[m.p]+' '+m.m+' '+m.id+' '+(m.t||'')).toLowerCase().includes(q));
+  const key={rq:m=>m.rq??1e9,i:m=>m.i,o:m=>m.o??1e9,p:m=>PN[m.p]};
+  r.sort((a,b)=>{const x=key[so](a),y=key[so](b);return x<y?-1:x>y?1:0});
+  $('tb').innerHTML=r.map(m=>{const w=m.rq>0&&RQ[1]>RQ[0]?8+92*(Math.log(m.rq)-Math.log(RQ[0]))/(Math.log(RQ[1])-Math.log(RQ[0])):8;
+    return `<tr><td><span class="dot" style="color:${PC[m.p]||'#999'}"></span>${PN[m.p]}</td><td><b>${m.m}</b>${tag(m)}<small>${m.id}</small></td><td class="n t${tier(m.i,RI)}">${money(m.i)}</td><td class="n t${tier(m.o,RO)}">${money(m.o)}</td><td>${m.c}</td><td>${m.t}</td><td class="n t${tier(m.rq,RQ)}">${rqf(m.rq)}${m.rq>0?'<div class="bar"><i class="'+(tier(m.rq,RQ)>2?'y':'')+'" style="width:'+w.toFixed(0)+'%"></i></div>':''}</td></tr>`}).join('')||'<tr><td colspan="7">No models match.</td></tr>';
+  $('cnt').textContent=r.length+' of '+D.models.length+' models shown. Cost per request uses your token counts. Colors run from blue (cheap) to yellow (expensive).';
+  const ch=all.filter(m=>m.rq>0).sort((a,b)=>a.rq-b.rq)[0],ci=[...D.models].sort((a,b)=>a.i-b.i)[0],au=D.models.filter(m=>m.oid).length,en=D.models.filter(m=>m.or).length;
+  $('stats').innerHTML=`<div class="stat"><b>${D.models.length}</b><span>models · ${D.providers.length} providers</span></div><div class="stat"><b>${au}/${en}</b><span>auto-synced · ${D.models.length-en} manual</span></div><div class="stat"><b>${money(ci.i)}</b><span>cheapest input · ${ci.m}</span></div><div class="stat"><b>${ch?rqf(ch.rq):'—'}</b><span>cheapest request · ${ch?ch.m:''}</span></div>`;
+  const top=r.filter(m=>m.rq>0).sort((a,b)=>a.rq-b.rq).slice(0,5);
+  if(top.length){const mx=top[top.length-1].rq;
+    $('chart').innerHTML=top.map(m=>`<div class="c-row"><div class="c-lbl" title="${PN[m.p]} ${m.m}">${m.m}</div><div class="c-track"><div class="c-bar" style="width:${Math.max(1,m.rq/mx*100).toFixed(1)}%;background:${PC[m.p]||'var(--ac)'}"></div></div><div class="c-val">${rqf(m.rq)}</div></div>`).join('');
+    $('chart-wrap').style.display='flex';
+  }else $('chart-wrap').style.display='none';
+}
+$('prov').innerHTML=D.providers.map(p=>`<div class="card"><h3><span class="dot" style="color:${PC[p.k]||'#999'}"></span>${p.n}</h3><p>${p.note}</p><a class="btn" href="${p.buy}" target="_blank" rel="noopener">Buy credits</a><a class="btn o" href="${p.price}" target="_blank" rel="noopener">Pricing page</a></div>`).join('');
+['q','pv','so','ti','to'].forEach(id=>$(id).addEventListener('input',render));
+$('theme').onclick=()=>{const d=document.documentElement,dark=d.dataset.theme?d.dataset.theme==='dark':(typeof matchMedia==='function'&&matchMedia('(prefers-color-scheme:dark)').matches);d.dataset.theme=dark?'light':'dark'};
+render();
+</script>
+</body>
+</html>
